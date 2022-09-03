@@ -1,0 +1,172 @@
+ .table1 {
+               display: table;
+               border-collapse: separate;
+               box-sizing: border-box;
+               text-indent: initial;
+               white-space: normal;
+               line-height: normal;
+               font-weight: normal;
+               font-size: medium;
+               font-style: normal;
+               color: -internal-quirk-inherit;
+               text-align: start;
+               border-spacing: 2px;
+               border-color: #ccc;
+               font-variant: normal;
+               margin: 0 10 0 0 
+       }
+ .table2 {
+               display: table;
+               border-collapse: separate;
+               box-sizing: border-box;
+               text-indent: initial;
+               white-space: normal;
+               font-weight: normal;
+               font-size: medium;
+               font-style: normal;
+               color: -internal-quirk-inherit;
+               text-align: start;
+               border-spacing: 2px;
+               font-variant: normal;
+               height:auto;
+               width:100%;
+                border="0";
+       }
+tr {
+       padding:1px;
+       display: table-row;
+}
+td {
+       border-radius:3px;
+}
+th {
+       border-radius:5px;
+       display: table-cell;
+       vertical-align: inherit;
+       font-weight: bold;
+}
+.WEEK {
+		background-color:#d9d9f3;
+}
+.TIME {
+		background-color:#d9d9f3;
+		border:solid 0.5px;
+		border-color:#bbb
+}
+.REGION {
+		padding:0px;
+		background-color:#f4f0e6;
+}
+table {
+       border-radius:10px;
+}
+.button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+.button {
+	display: inline-block;
+	border-radius: 10px;
+	background-color: #656566;
+	border: solid 3px;
+	border-color:#bbb;
+	color: white;
+	text-align: center;
+	font-size: 20px;
+	padding: 10px;
+	width: 200px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+}
+.button span:after {
+	content: '→';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+.button:hover span {
+	padding-right: 25px;
+}
+
+.button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+/*時間大框框*/
+.block1	{
+	height:120px;
+	min-width:140px;
+	background-color:rgb(244,244,244);
+	padding:-10px
+}
+.block2	{
+	width:45%;
+	display:inline-block;
+	text-align:center;
+	border-radius:5px;
+	height:100%;
+	min-height:120px;
+	margin-left:2px;
+	min-width:65px;
+}
+.block2 table	{
+	height:100%;
+}
+.block2 td {
+	border:solid 1px;
+	min-width:10px;
+}
+.REGION td{
+	background-color:#d9d9f3;
+}
+
+
+
+.WEEK {
+	font-size:15px;
+	font-size:xx-small;
+	font-style: normal;
+	font-weight: normal;
+}
+.TIME {
+	font-size:xx-small;
+	font-size:xx-small;
+	font-style: normal;
+	font-weight: normal;
+}
+tr td {
+	font-size:10px;
+}
+.TIME td, tr{
+	text-align:center;
+}
+
+.Class {
+	border:solid 1px;
+	border-radius:5px;
+	margin:5px;
+	background-color:rgba(0,0,0,0.05);
+}
+.hide {
+	display: none;
+}
+.Class:hover{
+	position;absolute;
+	display: block;
+	border:solid 1px;
+	border-radius:5px;
+	margin:5px;
+	background-color:rgba(0,0,0,0.1);
+}
+.Class:hover  .hide {
+	display: block;
+	background-color:rgba(255,255,255,0.8);
+	border:solid 0.5px;
+	border-radius:3px;
+	margin:1px 5px 3px 5px;
+}

@@ -1,0 +1,423 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<script>
+		var colors = ["#ffb6b9", "#fae3d9", "#bbded6", "#d9d9f3"];
+		var colorIndex = 0;
+		function changeColor() {
+			var col1 = document.getElementsByClassName("WEEK");
+				if( colorIndex >= colors.length ) {
+				    colorIndex = 0;
+			}
+			for(var i=0, len=col1.length; i<len; i++) {
+				col1[i].style["background-color"] = colors[colorIndex];
+			}
+			var col2 = document.getElementsByClassName("TIME");
+				if( colorIndex >= colors.length ) {
+				    colorIndex = 0;
+			}
+			for(var i=0, len=col2.length; i<len; i++) {
+				col2[i].style["background-color"] = colors[colorIndex];
+			}
+			colorIndex++;
+		}
+	</script>
+	<title>課表</title>
+</head>
+<body>
+	<span style="margin:100px;">
+	<button class="button" onclick="changeColor();" ><span>Change color</span></button>
+	</span>
+	
+	<table class="table1" align="center" border="12" width="90%";>
+		<tbody>
+			<!-------------------------------------------------------------------------------------------------------------------------------->
+			<tr>
+				<th class="WEEK" id = "COLOR1"  width="10%">星期/區段</th>
+				<th class="WEEK">一</th>
+				<th class="WEEK">二</th>
+				<th class="WEEK">三</th>
+				<th class="WEEK">四</th>
+				<th class="WEEK">五</th>
+				<th class="WEEK">六</th>
+				<th class="WEEK">日</th>
+			</tr>
+			<!-------------------------------------------------------------------------------------------------------------------------------->
+			<tr valign="center" width="100px">
+				<th class="REGION" style="height:auto;">
+					<div class="block1" id="b1">
+					<div class="block2">
+						<table>
+							<tr>
+								<td rowspan="3" class="TIME">I</td>
+								<td class="TIME">1</td>
+								<td class="TIME">7:10<br>8:00</td>
+							</tr>
+							<tr>
+								<td class="TIME">2</td>
+								<td class="TIME">8:10<br>9:00</td>
+							</tr>
+							<tr>
+								<td class="TIME">3</td>
+								<td class="TIME">9:10<br>10:00</td>
+							</tr>
+						</table>
+					</div>
+					<div class="block2">
+						<table width="55px">
+							<tr>
+								<td class="TIME">A</td>
+								<td class="TIME">7:00<br>8:00</td>
+							</tr>
+								<td class="TIME">B</td>
+								<td class="TIME">8:10<br>9:00</td>
+							</tr>
+						</table>
+					</div>
+					</div>				
+				</th>
+
+                                    <td><div class='Class'>(B)線性代數
+Linear Algebra<br>李新林<div class='hide'>年級：1<br>人數：63<br>學分：3<br>地點：工學院A館001<br></div></div><div class='Class'>(B)線性代數
+Linear Algebra<br>柯仁松<div class='hide'>年級：1<br>人數：63<br>學分：3<br>地點：工學院A館101<br></div></div><div class='Class'>(B)機率論
+Probability Theory<br>柳金章<div class='hide'>年級：2<br>人數：63<br>學分：3<br>地點：工學院A館205<br></div></div></td>
+                                    <td><div class='Class'>(C)組合語言
+Assembly Language
+(遠距教學/Distant learning) (程式設計相關/Programming related)<br>陳鵬升<div class='hide'>年級：2<br>人數：120<br>學分：3<br>地點：工學院A館001<br></div></div><div class='Class'>(C)計算機組織
+Computer Organization<br>林泰吉<div class='hide'>年級：3<br>人數：63<br>學分：3<br>地點：工學院A館101<br></div></div></td>
+                                    <td><div class='Class'>(F)程式語言
+Programming Languages
+(程式設計相關/Programming related)<br>簡立仁<div class='hide'>年級：1<br>人數：80<br>學分：3<br>地點：創新大樓341<br></div></div><div class='Class'>(8)資訊概論
+Introduction to Information Science
+(程式設計相關/Programming related)<br>林維暘<div class='hide'>年級：1<br>人數：120<br>學分：2<br>地點：工學院A館001<br></div></div><div class='Class'>(9)資訊概論
+Introduction to Information Science
+(程式設計相關/Programming related)<br>林維暘<div class='hide'>年級：1<br>人數：120<br>學分：2<br>地點：工學院A館001<br></div></div><div class='Class'>(8)資訊工程研討
+Computer Science Seminars<br>鍾菁哲<div class='hide'>年級：3<br>人數：90<br>學分：1<br>地點：工學院A館101<br></div></div><div class='Class'>(9)資訊工程研討
+Computer Science Seminars<br>鍾菁哲<div class='hide'>年級：3<br>人數：90<br>學分：1<br>地點：工學院A館101<br></div></div></td>
+                                    <td><div class='Class'>(G)程式語言
+Programming Languages
+(程式設計相關/Programming related)<br>簡立仁<div class='hide'>年級：1<br>人數：80<br>學分：3<br>地點：創新大樓341<br></div></div><div class='Class'>(G)機率論
+Probability Theory<br>黃啟富<div class='hide'>年級：2<br>人數：63<br>學分：3<br>地點：創新大樓324<br></div></div></td>
+                                    <td><div class='Class'>(13)程式設計實習（一）
+Quiz Section for Program Design (I)
+(程式設計相關/Programming related)<br>程芙茵<div class='hide'>年級：1<br>人數：40<br>學分：1<br>地點：創新大樓341<br></div></div><div class='Class'>(14)程式設計實習（一）
+Quiz Section for Program Design (I)
+(程式設計相關/Programming related)<br>程芙茵<div class='hide'>年級：1<br>人數：40<br>學分：1<br>地點：創新大樓341<br></div></div><div class='Class'>(13)數位電子學實驗
+Electronic Circuits and Electronics Lab.<br>連紹宇<div class='hide'>年級：2<br>人數：48<br>學分：1<br>地點：工學院A館206<br></div></div><div class='Class'>(14)數位電子學實驗
+Electronic Circuits and Electronics Lab.<br>連紹宇<div class='hide'>年級：2<br>人數：48<br>學分：1<br>地點：工學院A館206<br></div></div></td>
+                                    <td></td>
+                                    <td></td>
+
+    
+			</tr>
+			<!-------------------------------------------------------------------------------------------------------------------------------->
+			<tr valign="center">
+				<th class="REGION" style="height:auto;width:auto">
+					<div class="block1" id="b2">
+					<div class="block2">
+						<table>
+							<tr>
+								<td rowspan="3" class="TIME">II</td>
+								<td class="TIME">4</td>
+								<td class="TIME">10:10<br>11:00</td>
+							</tr>
+							<tr>
+								<td class="TIME">5</td>
+								<td class="TIME">11:10<br>12:00</td>
+							</tr>
+							<tr>
+								<td class="TIME">6</td>
+								<td class="TIME">12:10<br>13:00</td>
+							</tr>
+						</table>
+					</div>
+					<div class="block2">
+						<table width="55px">
+							<tr>
+								<td class="TIME">C</td>
+								<td class="TIME">10:15<br>11:30</td>
+							</tr>
+							<tr>
+								<td class="TIME">D</td>
+								<td class="TIME">11:45<br>13:00</td>
+							</tr>
+						</table>
+					</div>
+					</div>				
+				</th>
+
+                                    <td><div class='Class'>(B)程式語言
+Programming Languages
+(程式設計相關/Programming related)<br>蔡政宇<div class='hide'>年級：1<br>人數：38<br>學分：3<br>地點：創新大樓201<br></div></div><div class='Class'>(B)計算機組織
+Computer Organization<br>張榮貴<div class='hide'>年級：3<br>人數：63<br>學分：3<br>地點：工學院A館101<br></div></div></td>
+                                    <td><div class='Class'>(C)程式設計（一）
+Program Design (I)
+(程式設計相關/Programming related)<br>王銘宏<div class='hide'>年級：1<br>人數：80<br>學分：3<br>地點：創新大樓341<br></div></div><div class='Class'>(C)安全程式設計
+Secure coding
+(程式設計相關/Programming related)<br>林柏青<div class='hide'>年級：3<br>人數：90<br>學分：3<br>地點：工學院A館101<br></div></div></td>
+                                    <td><div class='Class'>(F)程式語言
+Programming Languages
+(程式設計相關/Programming related)<br>王俊堯<div class='hide'>年級：1<br>人數：70<br>學分：3<br>地點：電算中心215教室<br></div></div><div class='Class'>(E)程式設計（一）
+Program Design (I)
+(全英語授課/English-taught) (程式設計相關/Programming related)<br>程芙茵<div class='hide'>年級：1<br>人數：80<br>學分：3<br>地點：工學院A館101<br></div></div><div class='Class'>(F)資料結構
+Data Structure
+(程式設計相關/Programming related)<br>郭建志<div class='hide'>年級：2<br>人數：120<br>學分：3<br>地點：工學院A館001<br></div></div></td>
+                                    <td><div class='Class'>(G)作業系統概論
+Introduction to Operating System<br>羅習五<div class='hide'>年級：3<br>人數：80<br>學分：3<br>地點：創新大樓341<br></div></div><div class='Class'>(G)作業系統概論
+Introduction to Operating System<br>梁郁珮<div class='hide'>年級：3<br>人數：90<br>學分：3<br>地點：工學院A館101<br></div></div></td>
+                                    <td><div class='Class'>(13)程式設計實習（一）
+Quiz Section for Program Design (I)
+(程式設計相關/Programming related)<br>王銘宏<div class='hide'>年級：1<br>人數：40<br>學分：1<br>地點：創新大樓341<br></div></div><div class='Class'>(14)程式設計實習（一）
+Quiz Section for Program Design (I)
+(程式設計相關/Programming related)<br>王銘宏<div class='hide'>年級：1<br>人數：40<br>學分：1<br>地點：創新大樓341<br></div></div></td>
+                                    <td></td>
+                                    <td></td>
+
+    
+			</tr>
+			<!-------------------------------------------------------------------------------------------------------------------------------->
+			<tr valign="center">
+				<th class="REGION" style="height:auto;width:auto">
+					<div class="block1" id="b3">
+					<div class="block2">
+						<table>
+							<tr>
+								<td rowspan="3" class="TIME">III</td>
+								<td class="TIME">7</td>
+								<td class="TIME">13:10<br>14:00</td>
+							</tr>
+							<tr>
+								<td class="TIME">8</td>
+								<td class="TIME">14:10<br>15:00</td>
+							</tr>
+							<tr>
+								<td class="TIME">9</td>
+								<td class="TIME">15:10<br>16:00</td>
+							</tr>
+						</table>
+					</div>
+					<div class="block2">
+						<table width="55px">
+							<tr>
+								<td class="TIME">E</td>
+								<td class="TIME">13:15<br>14:30</td>
+							</tr>
+							<tr>
+								<td class="TIME">F</td>
+								<td class="TIME">14:45<br>16:00</td>
+							</tr>
+						</table>
+					</div>
+					</div>				
+				</th>
+
+                                    <td><div class='Class'>(B)線性代數
+Linear Algebra<br>李新林<div class='hide'>年級：1<br>人數：63<br>學分：3<br>地點：工學院A館001<br></div></div><div class='Class'>(B)線性代數
+Linear Algebra<br>柯仁松<div class='hide'>年級：1<br>人數：63<br>學分：3<br>地點：工學院A館101<br></div></div><div class='Class'>(B)機率論
+Probability Theory<br>柳金章<div class='hide'>年級：2<br>人數：63<br>學分：3<br>地點：工學院A館205<br></div></div></td>
+                                    <td><div class='Class'>(5)單板機與深度學習應用入門
+Single-board Computer and Deep Learning
+(程式設計相關/Programming related)<br>蔡政宇<div class='hide'>年級：1<br>人數：80<br>學分：1<br>地點：活動中心B1自造基地<br></div></div><div class='Class'>(4)物聯網與網頁應用程式開發
+IoT and Web Application Development
+(程式設計相關/Programming related)<br>蔡政宇<div class='hide'>年級：1<br>人數：80<br>學分：1<br>地點：活動中心B1自造基地<br></div></div><div class='Class'>(C)組合語言
+Assembly Language
+(遠距教學/Distant learning) (程式設計相關/Programming related)<br>陳鵬升<div class='hide'>年級：2<br>人數：120<br>學分：3<br>地點：工學院A館001<br></div></div><div class='Class'>(C)計算機組織
+Computer Organization<br>林泰吉<div class='hide'>年級：3<br>人數：63<br>學分：3<br>地點：工學院A館101<br></div></div><div class='Class'>(C)電信網路概論
+Introduction to Telecommunication Network<br>江為國<div class='hide'>年級：4<br>人數：65<br>學分：3<br>地點：工學院A館104<br></div></div></td>
+                                    <td><div class='Class'>(E)數位電子學
+Electronic Circuits and Electronics
+(遠距教學/Distant learning) (全英語授課/English-taught)<br>鍾菁哲<div class='hide'>年級：2<br>人數：63<br>學分：3<br>地點：工學院A館001<br></div></div><div class='Class'>(F)數位電子學
+Electronic Circuits and Electronics
+(遠距教學/Distant learning) (全英語授課/English-taught)<br>鍾菁哲<div class='hide'>年級：2<br>人數：63<br>學分：3<br>地點：工學院A館001<br></div></div><div class='Class'>(E)軟體工程
+Software Engineering
+(遠距教學/Distant learning)<br>熊博安<div class='hide'>年級：3<br>人數：90<br>學分：3<br>地點：工學院A館101<br></div></div><div class='Class'>(F)軟體工程
+Software Engineering
+(遠距教學/Distant learning)<br>熊博安<div class='hide'>年級：3<br>人數：90<br>學分：3<br>地點：工學院A館101<br></div></div></td>
+                                    <td><div class='Class'>(G)機率論
+Probability Theory<br>黃啟富<div class='hide'>年級：2<br>人數：63<br>學分：3<br>地點：創新大樓324<br></div></div></td>
+                                    <td><div class='Class'>(13)程式設計實習（一）
+Quiz Section for Program Design (I)
+(程式設計相關/Programming related)<br>程芙茵<div class='hide'>年級：1<br>人數：40<br>學分：1<br>地點：創新大樓341<br></div></div><div class='Class'>(14)程式設計實習（一）
+Quiz Section for Program Design (I)
+(程式設計相關/Programming related)<br>程芙茵<div class='hide'>年級：1<br>人數：40<br>學分：1<br>地點：創新大樓341<br></div></div><div class='Class'>(13)數位電子學實驗
+Electronic Circuits and Electronics Lab.<br>鍾菁哲<div class='hide'>年級：2<br>人數：48<br>學分：1<br>地點：工學院A館206<br></div></div><div class='Class'>(14)數位電子學實驗
+Electronic Circuits and Electronics Lab.<br>鍾菁哲<div class='hide'>年級：2<br>人數：48<br>學分：1<br>地點：工學院A館206<br></div></div></td>
+                                    <td></td>
+                                    <td></td>
+
+    
+			</tr>
+			<!-------------------------------------------------------------------------------------------------------------------------------->
+			<tr valign="center">
+				<th class="REGION" style="height:auto;width:auto">
+					<div class="block1" id="b4">
+					<div class="block2">
+						<table>
+							<tr>
+								<td rowspan="3" class="TIME">IV</td>
+								<td class="TIME">10</td>
+								<td class="TIME">16:10<br>17:00</td>
+							</tr>
+							<tr>
+								<td class="TIME">11</td>
+								<td class="TIME">17:10<br>18:00</td>
+							</tr>
+							<tr>
+								<td class="TIME">12</td>
+								<td class="TIME">18:10<br>19:00</td>
+							</tr>
+						</table>
+					</div>
+					<div class="block2">
+						<table width="55px">
+							<tr>
+								<td class="TIME">G</td>
+								<td class="TIME">16:15<br>17:30</td>
+							</tr>
+							<tr>
+								<td class="TIME">H</td>
+								<td class="TIME">17:45<br>19:00</td>
+							</tr>
+						</table>
+					</div>
+					</div>				
+				</th>
+
+                                    <td><div class='Class'>(B)程式語言
+Programming Languages
+(程式設計相關/Programming related)<br>蔡政宇<div class='hide'>年級：1<br>人數：38<br>學分：3<br>地點：創新大樓201<br></div></div><div class='Class'>(B)計算機組織
+Computer Organization<br>張榮貴<div class='hide'>年級：3<br>人數：63<br>學分：3<br>地點：工學院A館101<br></div></div></td>
+                                    <td><div class='Class'>(C)程式設計（一）
+Program Design (I)
+(程式設計相關/Programming related)<br>王銘宏<div class='hide'>年級：1<br>人數：80<br>學分：3<br>地點：創新大樓341<br></div></div><div class='Class'>(C)安全程式設計
+Secure coding
+(程式設計相關/Programming related)<br>林柏青<div class='hide'>年級：3<br>人數：90<br>學分：3<br>地點：工學院A館101<br></div></div></td>
+                                    <td><div class='Class'>(F)程式語言
+Programming Languages
+(程式設計相關/Programming related)<br>王俊堯<div class='hide'>年級：1<br>人數：70<br>學分：3<br>地點：電算中心215教室<br></div></div><div class='Class'>(E)程式設計（一）
+Program Design (I)
+(全英語授課/English-taught) (程式設計相關/Programming related)<br>程芙茵<div class='hide'>年級：1<br>人數：80<br>學分：3<br>地點：工學院A館101<br></div></div><div class='Class'>(F)資料結構
+Data Structure
+(程式設計相關/Programming related)<br>郭建志<div class='hide'>年級：2<br>人數：120<br>學分：3<br>地點：工學院A館001<br></div></div><div class='Class'>(E)多媒體技術概論
+Introduction to Multimedia Technology
+(全英語授課/English-taught)<br>江振國<div class='hide'>年級：3<br>人數：70<br>學分：3<br>地點：創新大樓324<br></div></div><div class='Class'>(F)多媒體技術概論
+Introduction to Multimedia Technology
+(全英語授課/English-taught)<br>江振國<div class='hide'>年級：3<br>人數：70<br>學分：3<br>地點：創新大樓324<br></div></div></td>
+                                    <td><div class='Class'>(G)作業系統概論
+Introduction to Operating System<br>羅習五<div class='hide'>年級：3<br>人數：80<br>學分：3<br>地點：創新大樓341<br></div></div><div class='Class'>(G)作業系統概論
+Introduction to Operating System<br>梁郁珮<div class='hide'>年級：3<br>人數：90<br>學分：3<br>地點：工學院A館101<br></div></div></td>
+                                    <td><div class='Class'>(13)程式設計實習（一）
+Quiz Section for Program Design (I)
+(程式設計相關/Programming related)<br>王銘宏<div class='hide'>年級：1<br>人數：40<br>學分：1<br>地點：創新大樓341<br></div></div><div class='Class'>(14)程式設計實習（一）
+Quiz Section for Program Design (I)
+(程式設計相關/Programming related)<br>王銘宏<div class='hide'>年級：1<br>人數：40<br>學分：1<br>地點：創新大樓341<br></div></div></td>
+                                    <td></td>
+                                    <td></td>
+
+    
+			</tr>
+			<!-------------------------------------------------------------------------------------------------------------------------------->
+			<tr valign="center">
+				<th class="REGION" style="height:auto;width:auto">
+					<div class="block1" id="b5">
+					<div class="block2">
+						<table>
+							<tr>
+								<td rowspan="3" class="TIME">V</td>
+								<td class="TIME">13</td>
+								<td class="TIME">19:10<br>20:00</td>
+							</tr>
+							<tr>
+								<td class="TIME">14</td>
+								<td class="TIME">20:10<br>21:00</td>
+							</tr>
+							<tr>
+								<td class="TIME">15</td>
+								<td class="TIME">21:10<br>22:00</td>
+							</tr>
+						</table>
+					</div>
+					<div class="block2">
+						<table width="55px">
+							<tr>
+								<td class="TIME">I</td>
+								<td class="TIME">19:15<br>20:30</td>
+							</tr>
+							<tr>
+								<td class="TIME">J</td>
+								<td class="TIME">20:45<br>22:00</td>
+							</tr>
+						</table>
+					</div>
+					</div>				
+				</th>
+
+                                    <td></td>
+                                    <td><div class='Class'>(C)數位電子學
+Electronic Circuits and Electronics
+(遠距教學/Distant learning)<br>連紹宇<div class='hide'>年級：2<br>人數：63<br>學分：3<br>地點：工學院A館205<br></div></div><div class='Class'>(D)數位電子學
+Electronic Circuits and Electronics
+(遠距教學/Distant learning)<br>連紹宇<div class='hide'>年級：2<br>人數：63<br>學分：3<br>地點：工學院A館205<br></div></div><div class='Class'>(C)電信網路概論
+Introduction to Telecommunication Network<br>江為國<div class='hide'>年級：4<br>人數：65<br>學分：3<br>地點：工學院A館104<br></div></div></td>
+                                    <td></td>
+                                    <td><div class='Class'>(12)專題實驗（二）
+Computer Project (II)<br>劉偉名<div class='hide'>年級：4<br>人數：120<br>學分：2<br>地點：工學院A館001<br></div></div><div class='Class'>(12)專題實驗（二）
+Computer Project (II)<br>黃啟富<div class='hide'>年級：4<br>人數：90<br>學分：2<br>地點：工學院A館101<br></div></div><div class='Class'>(12)專題實驗（二）
+Computer Project (II)<br>陳鵬升<div class='hide'>年級：4<br>人數：20<br>學分：2<br>地點：工學院A館103<br></div></div><div class='Class'>(12)專題實驗（二）
+Computer Project (II)<br>林維暘<div class='hide'>年級：4<br>人數：65<br>學分：2<br>地點：工學院A館104<br></div></div><div class='Class'>(12)專題實驗（二）
+Computer Project (II)<br>劉興民<div class='hide'>年級：4<br>人數：40<br>學分：2<br>地點：工學院A館204<br></div></div></td>
+                                    <td><div class='Class'>(13)專題實驗（二）
+Computer Project (II)<br>劉偉名<div class='hide'>年級：4<br>人數：120<br>學分：2<br>地點：工學院A館001<br></div></div><div class='Class'>(14)專題實驗（二）
+Computer Project (II)<br>劉偉名<div class='hide'>年級：4<br>人數：120<br>學分：2<br>地點：工學院A館001<br></div></div><div class='Class'>(15)專題實驗（二）
+Computer Project (II)<br>劉偉名<div class='hide'>年級：4<br>人數：120<br>學分：2<br>地點：工學院A館001<br></div></div><div class='Class'>(13)專題實驗（二）
+Computer Project (II)<br>黃啟富<div class='hide'>年級：4<br>人數：90<br>學分：2<br>地點：工學院A館101<br></div></div><div class='Class'>(14)專題實驗（二）
+Computer Project (II)<br>黃啟富<div class='hide'>年級：4<br>人數：90<br>學分：2<br>地點：工學院A館101<br></div></div><div class='Class'>(15)專題實驗（二）
+Computer Project (II)<br>黃啟富<div class='hide'>年級：4<br>人數：90<br>學分：2<br>地點：工學院A館101<br></div></div><div class='Class'>(13)專題實驗（二）
+Computer Project (II)<br>陳鵬升<div class='hide'>年級：4<br>人數：20<br>學分：2<br>地點：工學院A館103<br></div></div><div class='Class'>(14)專題實驗（二）
+Computer Project (II)<br>陳鵬升<div class='hide'>年級：4<br>人數：20<br>學分：2<br>地點：工學院A館103<br></div></div><div class='Class'>(15)專題實驗（二）
+Computer Project (II)<br>陳鵬升<div class='hide'>年級：4<br>人數：20<br>學分：2<br>地點：工學院A館103<br></div></div><div class='Class'>(13)專題實驗（二）
+Computer Project (II)<br>林維暘<div class='hide'>年級：4<br>人數：65<br>學分：2<br>地點：工學院A館104<br></div></div><div class='Class'>(14)專題實驗（二）
+Computer Project (II)<br>林維暘<div class='hide'>年級：4<br>人數：65<br>學分：2<br>地點：工學院A館104<br></div></div><div class='Class'>(15)專題實驗（二）
+Computer Project (II)<br>林維暘<div class='hide'>年級：4<br>人數：65<br>學分：2<br>地點：工學院A館104<br></div></div><div class='Class'>(13)專題實驗（二）
+Computer Project (II)<br>劉興民<div class='hide'>年級：4<br>人數：40<br>學分：2<br>地點：工學院A館204<br></div></div><div class='Class'>(14)專題實驗（二）
+Computer Project (II)<br>劉興民<div class='hide'>年級：4<br>人數：40<br>學分：2<br>地點：工學院A館204<br></div></div><div class='Class'>(15)專題實驗（二）
+Computer Project (II)<br>劉興民<div class='hide'>年級：4<br>人數：40<br>學分：2<br>地點：工學院A館204<br></div></div></td>
+                                    <td></td>
+                                    <td></td>
+
+    
+			</tr>
+			<!-------------------------------------------------------------------------------------------------------------------------------->
+		</tbody>
+	</table>
+	<script>
+	var F1 = (function findH() {
+				var table = document.getElementsByClassName("REGION");
+				document.getElementById("b1").style.height= table[0].offsetHeight +"px";
+				document.getElementById("b2").style.height= table[1].offsetHeight +"px";
+				document.getElementById("b3").style.height= table[2].offsetHeight +"px";
+				document.getElementById("b4").style.height= table[3].offsetHeight +"px";
+				document.getElementById("b5").style.height= table[4].offsetHeight +"px";
+			}());
+	</script>
+	<script>
+	var off = 2;
+	function findH1() {
+		var table = document.getElementsByClassName("REGION");
+		document.getElementById("b1").style.height= "120px";
+		document.getElementById("b2").style.height= "120px";
+		document.getElementById("b3").style.height= "120px";	
+		document.getElementById("b4").style.height= "120px";
+		document.getElementById("b5").style.height= "120px";
+		document.getElementById("b1").style.height= table[0].offsetHeight -off +"px";
+		document.getElementById("b2").style.height= table[1].offsetHeight -off +"px";
+		document.getElementById("b3").style.height= table[2].offsetHeight -off +"px";		
+		document.getElementById("b4").style.height= table[3].offsetHeight -off +"px";
+		document.getElementById("b5").style.height= table[4].offsetHeight -off +"px";
+	}
+	setInterval(findH1,10);
+	</script>
+</body>
+</html>

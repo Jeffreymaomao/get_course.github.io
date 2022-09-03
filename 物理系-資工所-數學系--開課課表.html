@@ -1,0 +1,620 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<script>
+		var colors = ["#ffb6b9", "#fae3d9", "#bbded6", "#d9d9f3"];
+		var colorIndex = 0;
+		function changeColor() {
+			var col1 = document.getElementsByClassName("WEEK");
+				if( colorIndex >= colors.length ) {
+				    colorIndex = 0;
+			}
+			for(var i=0, len=col1.length; i<len; i++) {
+				col1[i].style["background-color"] = colors[colorIndex];
+			}
+			var col2 = document.getElementsByClassName("TIME");
+				if( colorIndex >= colors.length ) {
+				    colorIndex = 0;
+			}
+			for(var i=0, len=col2.length; i<len; i++) {
+				col2[i].style["background-color"] = colors[colorIndex];
+			}
+			colorIndex++;
+		}
+	</script>
+	<title>
+物理系-資工所-數學系--開課課表
+	</title>
+</head>
+<body>
+	<span style="margin:100px;">
+	<button class="button" onclick="changeColor();" ><span>Change color</span></button>
+	</span>
+	
+	<table class="table1" align="center" border="12" width="90%";>
+		<tbody>
+			<!-------------------------------------------------------------------------------------------------------------------------------->
+			<tr>
+				<th class="WEEK" id = "COLOR1"  width="10%">星期/區段</th>
+				<th class="WEEK">一</th>
+				<th class="WEEK">二</th>
+				<th class="WEEK">三</th>
+				<th class="WEEK">四</th>
+				<th class="WEEK">五</th>
+				<th class="WEEK">六</th>
+				<th class="WEEK">日</th>
+			</tr>
+			<!-------------------------------------------------------------------------------------------------------------------------------->
+			<tr valign="center" width="100px">
+				<th class="REGION" style="height:auto;">
+					<div class="block1" id="b1">
+					<div class="block2">
+						<table>
+							<tr>
+								<td rowspan="3" class="TIME">I</td>
+								<td class="TIME">1</td>
+								<td class="TIME">7:10<br>8:00</td>
+							</tr>
+							<tr>
+								<td class="TIME">2</td>
+								<td class="TIME">8:10<br>9:00</td>
+							</tr>
+							<tr>
+								<td class="TIME">3</td>
+								<td class="TIME">9:10<br>10:00</td>
+							</tr>
+						</table>
+					</div>
+					<div class="block2">
+						<table width="55px">
+							<tr>
+								<td class="TIME">A</td>
+								<td class="TIME">7:00<br>8:00</td>
+							</tr>
+								<td class="TIME">B</td>
+								<td class="TIME">8:10<br>9:00</td>
+							</tr>
+						</table>
+					</div>
+					</div>				
+				</th>
+
+                                    <td><div class='Class'>(3)進階光學實驗學
+Advanced Experiments in Optics<br>林俊元<div class='hide'>年級：3<br>人數：18<br>學分：4<br>地點：物理館505進階光學實驗室<br></div></div></td>
+                                    <td><div class='Class'>(4)普通物理（一）
+General Physics (I)<br>甘宏志<div class='hide'>年級：1<br>人數：100<br>學分：3<br>地點：物理館206<br></div></div><div class='Class'>(5)普通物理（一）
+General Physics (I)<br>甘宏志<div class='hide'>年級：1<br>人數：100<br>學分：3<br>地點：物理館206<br></div></div><div class='Class'>(4)進階光學實驗學
+Advanced Experiments in Optics<br>林俊元<div class='hide'>年級：3<br>人數：18<br>學分：4<br>地點：物理館505進階光學實驗室<br></div></div><div class='Class'>(5)進階光學實驗學
+Advanced Experiments in Optics<br>林俊元<div class='hide'>年級：3<br>人數：18<br>學分：4<br>地點：物理館505進階光學實驗室<br></div></div><div class='Class'>(6)進階光學實驗學
+Advanced Experiments in Optics<br>林俊元<div class='hide'>年級：3<br>人數：18<br>學分：4<br>地點：物理館505進階光學實驗室<br></div></div><div class='Class'>(C)社群媒體探勘
+Social Media Mining<br>王銘宏<div class='hide'>年級：1<br>人數：65<br>學分：3<br>地點：工學院A館205<br></div></div><div class='Class'>(D)社群媒體探勘
+Social Media Mining<br>王銘宏<div class='hide'>年級：1<br>人數：65<br>學分：3<br>地點：工學院A館205<br></div></div><div class='Class'>(6)微積分（一）
+Calculus (I)<br>江謝宏任<div class='hide'>年級：1<br>人數：60<br>學分：4<br>地點：共同教室大樓202<br></div></div><div class='Class'>(4)微積分（一）
+Calculus (I)<br>尤玲凰<div class='hide'>年級：1<br>人數：90<br>學分：4<br>地點：共同教室大樓215<br></div></div><div class='Class'>(5)微積分（一）
+Calculus (I)<br>尤玲凰<div class='hide'>年級：1<br>人數：90<br>學分：4<br>地點：共同教室大樓215<br></div></div><div class='Class'>(6)微積分（一）
+Calculus (I)<br>尤玲凰<div class='hide'>年級：1<br>人數：90<br>學分：4<br>地點：共同教室大樓215<br></div></div><div class='Class'>(C)微積分（一）
+Calculus (I)<br>張守德<div class='hide'>年級：1<br>人數：90<br>學分：3<br>地點：共同教室大樓212<br></div></div><div class='Class'>(C)微積分（一）
+Calculus (I)<br>張覺心<div class='hide'>年級：1<br>人數：70<br>學分：3<br>地點：共同教室大樓401<br></div></div><div class='Class'>(C)微積分（一）
+Calculus (I)<br>紀美秀<div class='hide'>年級：1<br>人數：90<br>學分：3<br>地點：數學館201<br></div></div><div class='Class'>(C)微積分（一）
+Calculus (I)<br>廖文欽<div class='hide'>年級：1<br>人數：90<br>學分：3<br>地點：共同教室大樓422<br></div></div><div class='Class'>(C)微積分（一）
+Calculus (I)<br>褚孫錦<div class='hide'>年級：1<br>人數：60<br>學分：3<br>地點：共同教室大樓201<br></div></div><div class='Class'>(C)微積分（一）
+Calculus (I)<br>徐淑裕<div class='hide'>年級：1<br>人數：60<br>學分：3<br>地點：共同教室大樓203<br></div></div><div class='Class'>(C)微積分（一）
+Calculus (I)<br>賴振耀<div class='hide'>年級：1<br>人數：120<br>學分：3<br>地點：共同教室大樓216<br></div></div><div class='Class'>(6)微積分（一）
+Calculus (I)<br>張守德<div class='hide'>年級：1<br>人數：62<br>學分：3<br>地點：共同教室大樓204<br></div></div><div class='Class'>(C)機率論
+Introduction to Probability<br>李宗翰<div class='hide'>年級：2<br>人數：70<br>學分：3<br>地點：數學館203<br></div></div><div class='Class'>(C)統計推論
+Statistical Inference<br>沈仲維<div class='hide'>年級：4<br>人數：40<br>學分：3<br>地點：數學館204<br></div></div></td>
+                                    <td><div class='Class'>(7)基礎物理實驗學（三）A組
+Experiments on Fundamental Physics (III)A
+(程式設計相關/Programming related)<br>許佳振<div class='hide'>年級：2<br>人數：30<br>學分：4<br>地點：物理館506光學實驗室<br></div></div><div class='Class'>(8)基礎物理實驗學（三）A組
+Experiments on Fundamental Physics (III)A
+(程式設計相關/Programming related)<br>許佳振<div class='hide'>年級：2<br>人數：30<br>學分：4<br>地點：物理館506光學實驗室<br></div></div><div class='Class'>(9)基礎物理實驗學（三）A組
+Experiments on Fundamental Physics (III)A
+(程式設計相關/Programming related)<br>許佳振<div class='hide'>年級：2<br>人數：30<br>學分：4<br>地點：物理館506光學實驗室<br></div></div><div class='Class'>(7)基礎物理實驗學（三）B組
+Experiments on Fundamental Physics (III)B
+(程式設計相關/Programming related)<br>姚松偉<div class='hide'>年級：2<br>人數：30<br>學分：4<br>地點：物理館525<br></div></div><div class='Class'>(8)基礎物理實驗學（三）B組
+Experiments on Fundamental Physics (III)B
+(程式設計相關/Programming related)<br>姚松偉<div class='hide'>年級：2<br>人數：30<br>學分：4<br>地點：物理館525<br></div></div><div class='Class'>(9)基礎物理實驗學（三）B組
+Experiments on Fundamental Physics (III)B
+(程式設計相關/Programming related)<br>姚松偉<div class='hide'>年級：2<br>人數：30<br>學分：4<br>地點：物理館525<br></div></div><div class='Class'>(8)計算機專題（一）
+Special Topics on Computer Science (I)<br>郭建志<div class='hide'>年級：1<br>人數：0<br>學分：1<br>地點：創新大樓110大型會議室(銘珠講堂)<br></div></div><div class='Class'>(9)計算機專題（一）
+Special Topics on Computer Science (I)<br>郭建志<div class='hide'>年級：1<br>人數：0<br>學分：1<br>地點：創新大樓110大型會議室(銘珠講堂)<br></div></div><div class='Class'>(8)計算機專題（三）
+Special Topics on Computer Science (III)<br>郭建志<div class='hide'>年級：1<br>人數：0<br>學分：1<br>地點：創新大樓110大型會議室(銘珠講堂)<br></div></div><div class='Class'>(9)計算機專題（三）
+Special Topics on Computer Science (III)<br>郭建志<div class='hide'>年級：1<br>人數：0<br>學分：1<br>地點：創新大樓110大型會議室(銘珠講堂)<br></div></div><div class='Class'>(E)數學導論
+Introductory Mathematics<br>廖文欽<div class='hide'>年級：1<br>人數：60<br>學分：3<br>地點：數學館205<br></div></div><div class='Class'>(F)複變函數論（一）
+Complex Analysis (I)<br>張瑞恩<div class='hide'>年級：3<br>人數：40<br>學分：3<br>地點：數學館204<br></div></div><div class='Class'>(E)數值分析導論
+Introduction to Numerical Analysis<br>王琪仁<div class='hide'>年級：3<br>人數：50<br>學分：3<br>地點：數學館527<br></div></div></td>
+                                    <td><div class='Class'>(10)普通物理實驗（一）
+Experiments on General Physics (I)<br>甘宏志<div class='hide'>年級：1<br>人數：53<br>學分：1<br>地點：物理館502TEAL教室<br></div></div><div class='Class'>(11)普通物理實驗（一）
+Experiments on General Physics (I)<br>甘宏志<div class='hide'>年級：1<br>人數：53<br>學分：1<br>地點：物理館502TEAL教室<br></div></div><div class='Class'>(10)普通物理實驗（一）
+Experiments on General Physics (I)<br>謝立宜<div class='hide'>年級：1<br>人數：46<br>學分：1<br>地點：物理館101<br></div></div><div class='Class'>(11)普通物理實驗（一）
+Experiments on General Physics (I)<br>謝立宜<div class='hide'>年級：1<br>人數：46<br>學分：1<br>地點：物理館101<br></div></div><div class='Class'>(10)基礎物理實驗學（三）A組
+Experiments on Fundamental Physics (III)A
+(程式設計相關/Programming related)<br>許佳振<div class='hide'>年級：2<br>人數：30<br>學分：4<br>地點：物理館506光學實驗室<br></div></div><div class='Class'>(10)基礎物理實驗學（三）B組
+Experiments on Fundamental Physics (III)B
+(程式設計相關/Programming related)<br>姚松偉<div class='hide'>年級：2<br>人數：30<br>學分：4<br>地點：物理館525<br></div></div><div class='Class'>(11)論文研習與撰寫(三)
+Literatures study and thesis writing (III)<br>姚松偉 段必輝<div class='hide'>年級：4<br>人數：30<br>學分：4<br>地點：物理館303<br></div></div><div class='Class'>(12)論文研習與撰寫(三)
+Literatures study and thesis writing (III)<br>姚松偉 段必輝<div class='hide'>年級：4<br>人數：30<br>學分：4<br>地點：物理館303<br></div></div><div class='Class'>(G)影像處理
+Image Processing<br>柳金章<div class='hide'>年級：1<br>人數：90<br>學分：3<br>地點：工學院A館101<br></div></div><div class='Class'>(G)進階演算法設計
+Advanced Algorithm Design<br>李新林<div class='hide'>年級：1<br>人數：65<br>學分：3<br>地點：工學院A館104<br></div></div><div class='Class'>(G)科技英文寫作與溝通技巧
+Technical Writing and Communication in English<br>劉興民<div class='hide'>年級：1<br>人數：120<br>學分：3<br>地點：工學院A館001<br></div></div></td>
+                                    <td><div class='Class'>(I)代數（二）
+Algebra (II)<br>江謝宏任<div class='hide'>年級：2<br>人數：60<br>學分：3<br>地點：數學館205<br></div></div></td>
+                                    <td></td>
+                                    <td></td>
+
+    
+			</tr>
+			<!-------------------------------------------------------------------------------------------------------------------------------->
+			<tr valign="center">
+				<th class="REGION" style="height:auto;width:auto">
+					<div class="block1" id="b2">
+					<div class="block2">
+						<table>
+							<tr>
+								<td rowspan="3" class="TIME">II</td>
+								<td class="TIME">4</td>
+								<td class="TIME">10:10<br>11:00</td>
+							</tr>
+							<tr>
+								<td class="TIME">5</td>
+								<td class="TIME">11:10<br>12:00</td>
+							</tr>
+							<tr>
+								<td class="TIME">6</td>
+								<td class="TIME">12:10<br>13:00</td>
+							</tr>
+						</table>
+					</div>
+					<div class="block2">
+						<table width="55px">
+							<tr>
+								<td class="TIME">C</td>
+								<td class="TIME">10:15<br>11:30</td>
+							</tr>
+							<tr>
+								<td class="TIME">D</td>
+								<td class="TIME">11:45<br>13:00</td>
+							</tr>
+						</table>
+					</div>
+					</div>				
+				</th>
+
+                                    <td><div class='Class'>(B)應用數學（一）
+Applied Mathematics (I)<br>吳欣澤<div class='hide'>年級：2<br>人數：70<br>學分：3<br>地點：物理館206<br></div></div><div class='Class'>(B)電磁波
+Electromagnetic Waves<br>杜明憲<div class='hide'>年級：3<br>人數：50<br>學分：3<br>地點：物理館307<br></div></div><div class='Class'>(3)計算攝影學：應用圖學與影像技術
+Computational Photography: Applied Graphics and Imaging<br>劉興民<div class='hide'>年級：1<br>人數：65<br>學分：3<br>地點：工學院A館205<br></div></div><div class='Class'>(B)類神經網路
+Neural Networks<br>游寶達<div class='hide'>年級：1<br>人數：120<br>學分：3<br>地點：工學院A館001<br></div></div><div class='Class'>(B)作業系統
+Operating System
+(全英語授課/English-taught) (程式設計相關/Programming related)<br>柯仁松<div class='hide'>年級：1<br>人數：60<br>學分：3<br>地點：創新大樓324<br></div></div><div class='Class'>(B)軟體測試
+Software Testing<br>林迺衛<div class='hide'>年級：1<br>人數：40<br>學分：3<br>地點：工學院A館204<br></div></div><div class='Class'>(B)線性代數(二)
+Linear Algebra (II)<br>黃博峙<div class='hide'>年級：2<br>人數：60<br>學分：3<br>地點：數學館205<br></div></div></td>
+                                    <td><div class='Class'>(4)普通物理（一）
+General Physics (I)<br>張晃暐<div class='hide'>年級：1<br>人數：60<br>學分：3<br>地點：理學院215演講廳<br></div></div><div class='Class'>(5)普通物理（一）
+General Physics (I)<br>張晃暐<div class='hide'>年級：1<br>人數：60<br>學分：3<br>地點：理學院215演講廳<br></div></div><div class='Class'>(4)普通物理（一）
+General Physics (I)<br>温秉彝<div class='hide'>年級：1<br>人數：50<br>學分：3<br>地點：物理館206<br></div></div><div class='Class'>(5)普通物理（一）
+General Physics (I)<br>温秉彝<div class='hide'>年級：1<br>人數：50<br>學分：3<br>地點：物理館206<br></div></div><div class='Class'>(4)普通物理（一）
+General Physics (I)<br>陳偉家<div class='hide'>年級：1<br>人數：60<br>學分：3<br>地點：物理館307<br></div></div><div class='Class'>(5)普通物理（一）
+General Physics (I)<br>陳偉家<div class='hide'>年級：1<br>人數：60<br>學分：3<br>地點：物理館307<br></div></div><div class='Class'>(4)基礎物理（三）
+Fundamental of Physics (III)<br>蘇旺昌<div class='hide'>年級：2<br>人數：55<br>學分：4<br>地點：物理館213基礎物理實驗室<br></div></div><div class='Class'>(5)基礎物理（三）
+Fundamental of Physics (III)<br>蘇旺昌<div class='hide'>年級：2<br>人數：55<br>學分：4<br>地點：物理館213基礎物理實驗室<br></div></div><div class='Class'>(4)近代物理
+Modern Physics<br>門福國<div class='hide'>年級：2<br>人數：30<br>學分：3<br>地點：物理館303<br></div></div><div class='Class'>(5)近代物理
+Modern Physics<br>門福國<div class='hide'>年級：2<br>人數：30<br>學分：3<br>地點：物理館303<br></div></div><div class='Class'>(4)量子物理（二）
+Quantum Physics (II)<br>包健華<div class='hide'>年級：3<br>人數：80<br>學分：4<br>地點：物理館107<br></div></div><div class='Class'>(5)量子物理（二）
+Quantum Physics (II)<br>包健華<div class='hide'>年級：3<br>人數：80<br>學分：4<br>地點：物理館107<br></div></div><div class='Class'>(4)計算攝影學：應用圖學與影像技術
+Computational Photography: Applied Graphics and Imaging<br>劉興民<div class='hide'>年級：1<br>人數：65<br>學分：3<br>地點：工學院A館205<br></div></div><div class='Class'>(5)計算攝影學：應用圖學與影像技術
+Computational Photography: Applied Graphics and Imaging<br>劉興民<div class='hide'>年級：1<br>人數：65<br>學分：3<br>地點：工學院A館205<br></div></div><div class='Class'>(C)雲端學習科技
+Cloud E-Learning Technology
+(遠距教學/Distant learning)<br>游寶達<div class='hide'>年級：1<br>人數：120<br>學分：3<br>地點：工學院A館001<br></div></div><div class='Class'>(C)作業系統
+Operating System
+(全英語授課/English-taught) (程式設計相關/Programming related)<br>柯仁松<div class='hide'>年級：1<br>人數：60<br>學分：3<br>地點：創新大樓324<br></div></div><div class='Class'>(C)軟體測試
+Software Testing<br>林迺衛<div class='hide'>年級：1<br>人數：40<br>學分：3<br>地點：工學院A館204<br></div></div><div class='Class'>(C)軟體分析與最佳化
+Software Analysis and Optimization
+(遠距教學/Distant learning)<br>陳鵬升<div class='hide'>年級：1<br>人數：65<br>學分：3<br>地點：創新大樓322<br></div></div><div class='Class'>(D)軟體分析與最佳化
+Software Analysis and Optimization
+(遠距教學/Distant learning)<br>陳鵬升<div class='hide'>年級：1<br>人數：65<br>學分：3<br>地點：創新大樓322<br></div></div><div class='Class'>(4)微積分（一）
+Calculus (I)<br>張瑞恩<div class='hide'>年級：1<br>人數：60<br>學分：4<br>地點：數學館205<br></div></div><div class='Class'>(5)微積分（一）
+Calculus (I)<br>張瑞恩<div class='hide'>年級：1<br>人數：60<br>學分：4<br>地點：數學館205<br></div></div><div class='Class'>(6)微積分（一）
+Calculus (I)<br>江謝宏任<div class='hide'>年級：1<br>人數：60<br>學分：4<br>地點：共同教室大樓202<br></div></div><div class='Class'>(C)微積分（一）
+Calculus (I)<br>潘志祥<div class='hide'>年級：1<br>人數：90<br>學分：3<br>地點：共同教室大樓215<br></div></div><div class='Class'>(C)微積分（一）
+Calculus (I)<br>陳孟豁<div class='hide'>年級：1<br>人數：90<br>學分：3<br>地點：共同教室大樓422<br></div></div><div class='Class'>(4)基礎生物數學
+Mathematics for Life Sciences<br>王琪仁<div class='hide'>年級：1<br>人數：32<br>學分：4<br>地點：數學館307B<br></div></div><div class='Class'>(5)基礎生物數學
+Mathematics for Life Sciences<br>王琪仁<div class='hide'>年級：1<br>人數：32<br>學分：4<br>地點：數學館307B<br></div></div><div class='Class'>(6)微積分（一）
+Calculus (I)<br>張守德<div class='hide'>年級：1<br>人數：62<br>學分：3<br>地點：共同教室大樓204<br></div></div><div class='Class'>(4)高等微積分（一）
+Advanced Calculus (I)<br>黃志強<div class='hide'>年級：2<br>人數：70<br>學分：4<br>地點：數學館203<br></div></div><div class='Class'>(5)高等微積分（一）
+Advanced Calculus (I)<br>黃志強<div class='hide'>年級：2<br>人數：70<br>學分：4<br>地點：數學館203<br></div></div><div class='Class'>(6)線性代數(二)
+Linear Algebra (II)<br>黃博峙<div class='hide'>年級：2<br>人數：60<br>學分：3<br>地點：數學館205<br></div></div></td>
+                                    <td><div class='Class'>(7)基礎物理實驗學（一）B組
+Experiments on Fundamental Physics (I)B
+(程式設計相關/Programming related)<br>段必輝<div class='hide'>年級：1<br>人數：30<br>學分：4<br>地點：物理館525<br></div></div><div class='Class'>(8)基礎物理實驗學（一）B組
+Experiments on Fundamental Physics (I)B
+(程式設計相關/Programming related)<br>段必輝<div class='hide'>年級：1<br>人數：30<br>學分：4<br>地點：物理館525<br></div></div><div class='Class'>(9)基礎物理實驗學（一）B組
+Experiments on Fundamental Physics (I)B
+(程式設計相關/Programming related)<br>段必輝<div class='hide'>年級：1<br>人數：30<br>學分：4<br>地點：物理館525<br></div></div><div class='Class'>(8)普通物理（一）
+General Physics (I)<br>謝立宜<div class='hide'>年級：1<br>人數：70<br>學分：3<br>地點：物理館206<br></div></div><div class='Class'>(9)普通物理（一）
+General Physics (I)<br>謝立宜<div class='hide'>年級：1<br>人數：70<br>學分：3<br>地點：物理館206<br></div></div><div class='Class'>(8)普通物理（一）
+General Physics (I)<br>包健華<div class='hide'>年級：1<br>人數：117<br>學分：4<br>地點：物理館502TEAL教室<br></div></div><div class='Class'>(9)普通物理（一）
+General Physics (I)<br>包健華<div class='hide'>年級：1<br>人數：117<br>學分：4<br>地點：物理館502TEAL教室<br></div></div><div class='Class'>(8)理論力學
+Theoretical Mechanics<br>杜明憲<div class='hide'>年級：2<br>人數：50<br>學分：4<br>地點：物理館106<br></div></div><div class='Class'>(9)理論力學
+Theoretical Mechanics<br>杜明憲<div class='hide'>年級：2<br>人數：50<br>學分：4<br>地點：物理館106<br></div></div><div class='Class'>(F)光學
+Optics<br>魏台輝<div class='hide'>年級：3<br>人數：50<br>學分：3<br>地點：物理館307<br></div></div><div class='Class'>(E)圖形識別
+Pattern Recognition<br>林維暘<div class='hide'>年級：1<br>人數：85<br>學分：3<br>地點：工學院A館104<br></div></div><div class='Class'>(F)圖形識別
+Pattern Recognition<br>林維暘<div class='hide'>年級：1<br>人數：85<br>學分：3<br>地點：工學院A館104<br></div></div><div class='Class'>(E)生醫影像處理系統
+Biomedical Image Processing Systems<br>劉偉名<div class='hide'>年級：1<br>人數：40<br>學分：3<br>地點：工學院A館204<br></div></div><div class='Class'>(F)生醫影像處理系統
+Biomedical Image Processing Systems<br>劉偉名<div class='hide'>年級：1<br>人數：40<br>學分：3<br>地點：工學院A館204<br></div></div><div class='Class'>(E)無線區域網路
+Wireless Local Area Networks<br>黃啟富<div class='hide'>年級：1<br>人數：65<br>學分：3<br>地點：創新大樓322<br></div></div><div class='Class'>(F)無線區域網路
+Wireless Local Area Networks<br>黃啟富<div class='hide'>年級：1<br>人數：65<br>學分：3<br>地點：創新大樓322<br></div></div><div class='Class'>(E)網路安全攻防技術
+Techniques of Network Attacks and Defenses<br>林柏青<div class='hide'>年級：1<br>人數：65<br>學分：3<br>地點：工學院A館205<br></div></div><div class='Class'>(F)網路安全攻防技術
+Techniques of Network Attacks and Defenses<br>林柏青<div class='hide'>年級：1<br>人數：65<br>學分：3<br>地點：工學院A館205<br></div></div><div class='Class'>(E)高等數位積體電路設計
+Advanced Digital Integrated Circuits Design
+(遠距教學/Distant learning)<br>鍾菁哲<div class='hide'>年級：1<br>人數：80<br>學分：3<br>地點：創新大樓341<br></div></div><div class='Class'>(F)高等數位積體電路設計
+Advanced Digital Integrated Circuits Design
+(遠距教學/Distant learning)<br>鍾菁哲<div class='hide'>年級：1<br>人數：80<br>學分：3<br>地點：創新大樓341<br></div></div><div class='Class'>(E)嵌入式開發軟體工具組
+Toolchain for Embedded System<br>張榮貴<div class='hide'>年級：1<br>人數：24<br>學分：3<br>地點：創新大樓315<br></div></div><div class='Class'>(F)嵌入式開發軟體工具組
+Toolchain for Embedded System<br>張榮貴<div class='hide'>年級：1<br>人數：24<br>學分：3<br>地點：創新大樓315<br></div></div><div class='Class'>(E)Python與數學學習
+Python Programming in Mathematics
+(程式設計相關/Programming related)<br>褚孫錦<div class='hide'>年級：2<br>人數：40<br>學分：3<br>地點：電算中心216教室<br></div></div></td>
+                                    <td><div class='Class'>(10)基礎物理實驗學（一）B組
+Experiments on Fundamental Physics (I)B
+(程式設計相關/Programming related)<br>段必輝<div class='hide'>年級：1<br>人數：30<br>學分：4<br>地點：物理館525<br></div></div><div class='Class'>(11)論文研習與撰寫（一）
+Literatures study and thesis writing(I)<br>魏台輝 韓殿君<div class='hide'>年級：3<br>人數：30<br>學分：4<br>地點：物理館303<br></div></div><div class='Class'>(12)論文研習與撰寫（一）
+Literatures study and thesis writing(I)<br>魏台輝 韓殿君<div class='hide'>年級：3<br>人數：30<br>學分：4<br>地點：物理館303<br></div></div></td>
+                                    <td><div class='Class'>(I)普通物理（一）
+General Physics (I)
+(遠距教學/Distant learning)<br>謝立宜<div class='hide'>年級：1<br>人數：50<br>學分：3<br>地點：物理館106<br></div></div></td>
+                                    <td></td>
+                                    <td></td>
+
+    
+			</tr>
+			<!-------------------------------------------------------------------------------------------------------------------------------->
+			<tr valign="center">
+				<th class="REGION" style="height:auto;width:auto">
+					<div class="block1" id="b3">
+					<div class="block2">
+						<table>
+							<tr>
+								<td rowspan="3" class="TIME">III</td>
+								<td class="TIME">7</td>
+								<td class="TIME">13:10<br>14:00</td>
+							</tr>
+							<tr>
+								<td class="TIME">8</td>
+								<td class="TIME">14:10<br>15:00</td>
+							</tr>
+							<tr>
+								<td class="TIME">9</td>
+								<td class="TIME">15:10<br>16:00</td>
+							</tr>
+						</table>
+					</div>
+					<div class="block2">
+						<table width="55px">
+							<tr>
+								<td class="TIME">E</td>
+								<td class="TIME">13:15<br>14:30</td>
+							</tr>
+							<tr>
+								<td class="TIME">F</td>
+								<td class="TIME">14:45<br>16:00</td>
+							</tr>
+						</table>
+					</div>
+					</div>				
+				</th>
+
+                                    <td><div class='Class'>(B)基本粒子物理導論
+Introduction to Elementary Particle Physics<br>蘇旺昌<div class='hide'>年級：4<br>人數：50<br>學分：3<br>地點：物理館106<br></div></div><div class='Class'>(3)系統和軟體安全
+System and Software security
+(全英語授課/English-taught)<br>阮文齡<div class='hide'>年級：1<br>人數：60<br>學分：3<br>地點：創新大樓339<br></div></div></td>
+                                    <td><div class='Class'>(4)普通物理（一）
+General Physics (I)<br>甘宏志<div class='hide'>年級：1<br>人數：100<br>學分：3<br>地點：物理館206<br></div></div><div class='Class'>(5)普通物理（一）
+General Physics (I)<br>甘宏志<div class='hide'>年級：1<br>人數：100<br>學分：3<br>地點：物理館206<br></div></div><div class='Class'>(4)熱統計物理學
+Thermal and Statistical Physics<br>蔡炎熾<div class='hide'>年級：3<br>人數：16<br>學分：4<br>地點：物理館304<br></div></div><div class='Class'>(5)熱統計物理學
+Thermal and Statistical Physics<br>蔡炎熾<div class='hide'>年級：3<br>人數：16<br>學分：4<br>地點：物理館304<br></div></div><div class='Class'>(4)系統和軟體安全
+System and Software security
+(全英語授課/English-taught)<br>阮文齡<div class='hide'>年級：1<br>人數：60<br>學分：3<br>地點：創新大樓339<br></div></div><div class='Class'>(5)系統和軟體安全
+System and Software security
+(全英語授課/English-taught)<br>阮文齡<div class='hide'>年級：1<br>人數：60<br>學分：3<br>地點：創新大樓339<br></div></div><div class='Class'>(4)微積分（一）
+Calculus (I)<br>張瑞恩<div class='hide'>年級：1<br>人數：60<br>學分：4<br>地點：數學館205<br></div></div><div class='Class'>(5)微積分（一）
+Calculus (I)<br>張瑞恩<div class='hide'>年級：1<br>人數：60<br>學分：4<br>地點：數學館205<br></div></div><div class='Class'>(4)微積分（一）
+Calculus (I)<br>尤玲凰<div class='hide'>年級：1<br>人數：90<br>學分：4<br>地點：共同教室大樓215<br></div></div><div class='Class'>(5)微積分（一）
+Calculus (I)<br>尤玲凰<div class='hide'>年級：1<br>人數：90<br>學分：4<br>地點：共同教室大樓215<br></div></div><div class='Class'>(6)微積分（一）
+Calculus (I)<br>尤玲凰<div class='hide'>年級：1<br>人數：90<br>學分：4<br>地點：共同教室大樓215<br></div></div><div class='Class'>(C)微積分（一）
+Calculus (I)<br>潘志祥<div class='hide'>年級：1<br>人數：90<br>學分：3<br>地點：共同教室大樓215<br></div></div><div class='Class'>(C)微積分（一）
+Calculus (I)<br>陳孟豁<div class='hide'>年級：1<br>人數：90<br>學分：3<br>地點：共同教室大樓422<br></div></div><div class='Class'>(C)微積分（一）
+Calculus (I)<br>張守德<div class='hide'>年級：1<br>人數：90<br>學分：3<br>地點：共同教室大樓212<br></div></div><div class='Class'>(C)微積分（一）
+Calculus (I)<br>張覺心<div class='hide'>年級：1<br>人數：70<br>學分：3<br>地點：共同教室大樓401<br></div></div><div class='Class'>(4)基礎生物數學
+Mathematics for Life Sciences<br>王琪仁<div class='hide'>年級：1<br>人數：32<br>學分：4<br>地點：數學館307B<br></div></div><div class='Class'>(5)基礎生物數學
+Mathematics for Life Sciences<br>王琪仁<div class='hide'>年級：1<br>人數：32<br>學分：4<br>地點：數學館307B<br></div></div><div class='Class'>(C)微積分（一）
+Calculus (I)<br>紀美秀<div class='hide'>年級：1<br>人數：90<br>學分：3<br>地點：數學館201<br></div></div><div class='Class'>(C)微積分（一）
+Calculus (I)<br>廖文欽<div class='hide'>年級：1<br>人數：90<br>學分：3<br>地點：共同教室大樓422<br></div></div><div class='Class'>(C)微積分（一）
+Calculus (I)<br>褚孫錦<div class='hide'>年級：1<br>人數：60<br>學分：3<br>地點：共同教室大樓201<br></div></div><div class='Class'>(C)微積分（一）
+Calculus (I)<br>徐淑裕<div class='hide'>年級：1<br>人數：60<br>學分：3<br>地點：共同教室大樓203<br></div></div><div class='Class'>(C)微積分（一）
+Calculus (I)<br>賴振耀<div class='hide'>年級：1<br>人數：120<br>學分：3<br>地點：共同教室大樓216<br></div></div><div class='Class'>(4)高等微積分（一）
+Advanced Calculus (I)<br>黃志強<div class='hide'>年級：2<br>人數：70<br>學分：4<br>地點：數學館203<br></div></div><div class='Class'>(5)高等微積分（一）
+Advanced Calculus (I)<br>黃志強<div class='hide'>年級：2<br>人數：70<br>學分：4<br>地點：數學館203<br></div></div><div class='Class'>(C)機率論
+Introduction to Probability<br>李宗翰<div class='hide'>年級：2<br>人數：70<br>學分：3<br>地點：數學館203<br></div></div><div class='Class'>(C)統計推論
+Statistical Inference<br>沈仲維<div class='hide'>年級：4<br>人數：40<br>學分：3<br>地點：數學館204<br></div></div></td>
+                                    <td><div class='Class'>(8)普通物理（一）
+General Physics (I)<br>包健華<div class='hide'>年級：1<br>人數：117<br>學分：4<br>地點：物理館502TEAL教室<br></div></div><div class='Class'>(9)普通物理（一）
+General Physics (I)<br>包健華<div class='hide'>年級：1<br>人數：117<br>學分：4<br>地點：物理館502TEAL教室<br></div></div><div class='Class'>(8)物理專題（一）
+Special Topic in Physics(I)<br>蘇旺昌<div class='hide'>年級：3<br>人數：30<br>學分：2<br>地點：物理館303<br></div></div><div class='Class'>(9)物理專題（一）
+Special Topic in Physics(I)<br>蘇旺昌<div class='hide'>年級：3<br>人數：30<br>學分：2<br>地點：物理館303<br></div></div><div class='Class'>(8)物理專題（三）
+Special Topic in Physics (III)<br>曲宏宇<div class='hide'>年級：4<br>人數：16<br>學分：2<br>地點：物理館304<br></div></div><div class='Class'>(9)物理專題（三）
+Special Topic in Physics (III)<br>曲宏宇<div class='hide'>年級：4<br>人數：16<br>學分：2<br>地點：物理館304<br></div></div><div class='Class'>(E)電腦視覺
+Computer Vision
+(全英語授課/English-taught)<br>江振國<div class='hide'>年級：1<br>人數：60<br>學分：3<br>地點：創新大樓324<br></div></div><div class='Class'>(F)電腦視覺
+Computer Vision
+(全英語授課/English-taught)<br>江振國<div class='hide'>年級：1<br>人數：60<br>學分：3<br>地點：創新大樓324<br></div></div><div class='Class'>(E)人機互動與使用者研究方法
+Human-Computer Interaction and Methodology of User Research
+(全英語授課/English-taught)<br>程芙茵<div class='hide'>年級：1<br>人數：50<br>學分：3<br>地點：創新大樓339<br></div></div><div class='Class'>(F)人機互動與使用者研究方法
+Human-Computer Interaction and Methodology of User Research
+(全英語授課/English-taught)<br>程芙茵<div class='hide'>年級：1<br>人數：50<br>學分：3<br>地點：創新大樓339<br></div></div><div class='Class'>(E)作業系統設計與實作
+Operating System: Design and Implementation<br>羅習五<div class='hide'>年級：1<br>人數：24<br>學分：3<br>地點：創新大樓313<br></div></div><div class='Class'>(F)作業系統設計與實作
+Operating System: Design and Implementation<br>羅習五<div class='hide'>年級：1<br>人數：24<br>學分：3<br>地點：創新大樓313<br></div></div><div class='Class'>(E)近似演算法與網路應用
+Approximation Algorithms and Applications to Networks<br>郭建志<div class='hide'>年級：1<br>人數：65<br>學分：3<br>地點：工學院A館104<br></div></div><div class='Class'>(F)近似演算法與網路應用
+Approximation Algorithms and Applications to Networks<br>郭建志<div class='hide'>年級：1<br>人數：65<br>學分：3<br>地點：工學院A館104<br></div></div><div class='Class'>(E)特殊應用積體電路
+Application-Specific Integrated Circuits<br>林泰吉<div class='hide'>年級：1<br>人數：10<br>學分：3<br>地點：工學院A館206<br></div></div><div class='Class'>(F)特殊應用積體電路
+Application-Specific Integrated Circuits<br>林泰吉<div class='hide'>年級：1<br>人數：10<br>學分：3<br>地點：工學院A館206<br></div></div><div class='Class'>(8)編譯器
+Compilers
+(全英語授課/English-taught)<br>林迺衛<div class='hide'>年級：1<br>人數：10<br>學分：3<br>地點：工學院A館204<br></div></div><div class='Class'>(9)編譯器
+Compilers
+(全英語授課/English-taught)<br>林迺衛<div class='hide'>年級：1<br>人數：10<br>學分：3<br>地點：工學院A館204<br></div></div><div class='Class'>(E)數學導論
+Introductory Mathematics<br>廖文欽<div class='hide'>年級：1<br>人數：60<br>學分：3<br>地點：數學館205<br></div></div><div class='Class'>(F)複變函數論（一）
+Complex Analysis (I)<br>張瑞恩<div class='hide'>年級：3<br>人數：40<br>學分：3<br>地點：數學館204<br></div></div><div class='Class'>(E)數值分析導論
+Introduction to Numerical Analysis<br>王琪仁<div class='hide'>年級：3<br>人數：50<br>學分：3<br>地點：數學館527<br></div></div></td>
+                                    <td><div class='Class'>(10)普通物理實驗（一）
+Experiments on General Physics (I)<br>甘宏志<div class='hide'>年級：1<br>人數：53<br>學分：1<br>地點：物理館502TEAL教室<br></div></div><div class='Class'>(11)普通物理實驗（一）
+Experiments on General Physics (I)<br>甘宏志<div class='hide'>年級：1<br>人數：53<br>學分：1<br>地點：物理館502TEAL教室<br></div></div><div class='Class'>(10)普通物理實驗（一）
+Experiments on General Physics (I)<br>謝立宜<div class='hide'>年級：1<br>人數：46<br>學分：1<br>地點：物理館101<br></div></div><div class='Class'>(11)普通物理實驗（一）
+Experiments on General Physics (I)<br>謝立宜<div class='hide'>年級：1<br>人數：46<br>學分：1<br>地點：物理館101<br></div></div><div class='Class'>(10)基礎物理（一）
+Fundamental of Physics (I)<br>梁贊全<div class='hide'>年級：1<br>人數：55<br>學分：4<br>地點：物理館211<br></div></div><div class='Class'>(11)基礎物理（一）
+Fundamental of Physics (I)<br>梁贊全<div class='hide'>年級：1<br>人數：55<br>學分：4<br>地點：物理館211<br></div></div><div class='Class'>(11)論文研習與撰寫(三)
+Literatures study and thesis writing (III)<br>姚松偉 段必輝<div class='hide'>年級：4<br>人數：30<br>學分：4<br>地點：物理館303<br></div></div><div class='Class'>(12)論文研習與撰寫(三)
+Literatures study and thesis writing (III)<br>姚松偉 段必輝<div class='hide'>年級：4<br>人數：30<br>學分：4<br>地點：物理館303<br></div></div><div class='Class'>(G)影像處理
+Image Processing<br>柳金章<div class='hide'>年級：1<br>人數：90<br>學分：3<br>地點：工學院A館101<br></div></div><div class='Class'>(G)遙測影像分析概論
+Introduction to remote sensing image analysis<br>劉偉名<div class='hide'>年級：1<br>人數：65<br>學分：3<br>地點：工學院A館205<br></div></div><div class='Class'>(H)遙測影像分析概論
+Introduction to remote sensing image analysis<br>劉偉名<div class='hide'>年級：1<br>人數：65<br>學分：3<br>地點：工學院A館205<br></div></div><div class='Class'>(G)進階演算法設計
+Advanced Algorithm Design<br>李新林<div class='hide'>年級：1<br>人數：65<br>學分：3<br>地點：工學院A館104<br></div></div><div class='Class'>(10)編譯器
+Compilers
+(全英語授課/English-taught)<br>林迺衛<div class='hide'>年級：1<br>人數：10<br>學分：3<br>地點：工學院A館204<br></div></div><div class='Class'>(G)科技英文寫作與溝通技巧
+Technical Writing and Communication in English<br>劉興民<div class='hide'>年級：1<br>人數：120<br>學分：3<br>地點：工學院A館001<br></div></div></td>
+                                    <td><div class='Class'>(I)代數（二）
+Algebra (II)<br>江謝宏任<div class='hide'>年級：2<br>人數：60<br>學分：3<br>地點：數學館205<br></div></div></td>
+                                    <td></td>
+                                    <td></td>
+
+    
+			</tr>
+			<!-------------------------------------------------------------------------------------------------------------------------------->
+			<tr valign="center">
+				<th class="REGION" style="height:auto;width:auto">
+					<div class="block1" id="b4">
+					<div class="block2">
+						<table>
+							<tr>
+								<td rowspan="3" class="TIME">IV</td>
+								<td class="TIME">10</td>
+								<td class="TIME">16:10<br>17:00</td>
+							</tr>
+							<tr>
+								<td class="TIME">11</td>
+								<td class="TIME">17:10<br>18:00</td>
+							</tr>
+							<tr>
+								<td class="TIME">12</td>
+								<td class="TIME">18:10<br>19:00</td>
+							</tr>
+						</table>
+					</div>
+					<div class="block2">
+						<table width="55px">
+							<tr>
+								<td class="TIME">G</td>
+								<td class="TIME">16:15<br>17:30</td>
+							</tr>
+							<tr>
+								<td class="TIME">H</td>
+								<td class="TIME">17:45<br>19:00</td>
+							</tr>
+						</table>
+					</div>
+					</div>				
+				</th>
+
+                                    <td><div class='Class'>(3)基礎物理實驗學（一）A組
+Experiments on Fundamental Physics (I)A
+(程式設計相關/Programming related)<br>曲宏宇<div class='hide'>年級：1<br>人數：36<br>學分：4<br>地點：物理館525<br></div></div><div class='Class'>(B)應用數學（一）
+Applied Mathematics (I)<br>吳欣澤<div class='hide'>年級：2<br>人數：70<br>學分：3<br>地點：物理館206<br></div></div><div class='Class'>(B)電磁波
+Electromagnetic Waves<br>杜明憲<div class='hide'>年級：3<br>人數：50<br>學分：3<br>地點：物理館307<br></div></div><div class='Class'>(B)類神經網路
+Neural Networks<br>游寶達<div class='hide'>年級：1<br>人數：120<br>學分：3<br>地點：工學院A館001<br></div></div><div class='Class'>(B)行動通訊網路
+Mobile Communication Networks<br>江為國<div class='hide'>年級：1<br>人數：65<br>學分：3<br>地點：工學院A館205<br></div></div><div class='Class'>(B)編譯器
+Compilers<br>林迺衛<div class='hide'>年級：1<br>人數：60<br>學分：3<br>地點：創新大樓339<br></div></div><div class='Class'>(B)線性代數(二)
+Linear Algebra (II)<br>黃博峙<div class='hide'>年級：2<br>人數：60<br>學分：3<br>地點：數學館205<br></div></div></td>
+                                    <td><div class='Class'>(4)基礎物理實驗學（一）A組
+Experiments on Fundamental Physics (I)A
+(程式設計相關/Programming related)<br>曲宏宇<div class='hide'>年級：1<br>人數：36<br>學分：4<br>地點：物理館525<br></div></div><div class='Class'>(5)基礎物理實驗學（一）A組
+Experiments on Fundamental Physics (I)A
+(程式設計相關/Programming related)<br>曲宏宇<div class='hide'>年級：1<br>人數：36<br>學分：4<br>地點：物理館525<br></div></div><div class='Class'>(6)基礎物理實驗學（一）A組
+Experiments on Fundamental Physics (I)A
+(程式設計相關/Programming related)<br>曲宏宇<div class='hide'>年級：1<br>人數：36<br>學分：4<br>地點：物理館525<br></div></div><div class='Class'>(4)普通物理（一）
+General Physics (I)<br>張晃暐<div class='hide'>年級：1<br>人數：60<br>學分：3<br>地點：理學院215演講廳<br></div></div><div class='Class'>(5)普通物理（一）
+General Physics (I)<br>張晃暐<div class='hide'>年級：1<br>人數：60<br>學分：3<br>地點：理學院215演講廳<br></div></div><div class='Class'>(4)普通物理（一）
+General Physics (I)<br>温秉彝<div class='hide'>年級：1<br>人數：50<br>學分：3<br>地點：物理館206<br></div></div><div class='Class'>(5)普通物理（一）
+General Physics (I)<br>温秉彝<div class='hide'>年級：1<br>人數：50<br>學分：3<br>地點：物理館206<br></div></div><div class='Class'>(4)普通物理（一）
+General Physics (I)<br>陳偉家<div class='hide'>年級：1<br>人數：60<br>學分：3<br>地點：物理館307<br></div></div><div class='Class'>(5)普通物理（一）
+General Physics (I)<br>陳偉家<div class='hide'>年級：1<br>人數：60<br>學分：3<br>地點：物理館307<br></div></div><div class='Class'>(5)普通物理(一)演習
+Recitation on General Physics (I)<br>張晃暐<div class='hide'>年級：1<br>人數：80<br>學分：1<br>地點：理學院215演講廳<br></div></div><div class='Class'>(5)普通物理(一)演習
+Recitation on General Physics (I)<br>陳偉家<div class='hide'>年級：1<br>人數：50<br>學分：1<br>地點：物理館106<br></div></div><div class='Class'>(5)普通物理(一)演習
+Recitation on General Physics (I)<br>温秉彝<div class='hide'>年級：1<br>人數：70<br>學分：1<br>地點：物理館206<br></div></div><div class='Class'>(4)基礎物理（三）
+Fundamental of Physics (III)<br>蘇旺昌<div class='hide'>年級：2<br>人數：55<br>學分：4<br>地點：物理館213基礎物理實驗室<br></div></div><div class='Class'>(5)基礎物理（三）
+Fundamental of Physics (III)<br>蘇旺昌<div class='hide'>年級：2<br>人數：55<br>學分：4<br>地點：物理館213基礎物理實驗室<br></div></div><div class='Class'>(4)近代物理
+Modern Physics<br>門福國<div class='hide'>年級：2<br>人數：30<br>學分：3<br>地點：物理館303<br></div></div><div class='Class'>(5)近代物理
+Modern Physics<br>門福國<div class='hide'>年級：2<br>人數：30<br>學分：3<br>地點：物理館303<br></div></div><div class='Class'>(5)近代物理演習
+Case Studies on Modern Physics<br>門福國<div class='hide'>年級：2<br>人數：30<br>學分：1<br>地點：物理館303<br></div></div><div class='Class'>(4)量子物理（二）
+Quantum Physics (II)<br>包健華<div class='hide'>年級：3<br>人數：80<br>學分：4<br>地點：物理館107<br></div></div><div class='Class'>(5)量子物理（二）
+Quantum Physics (II)<br>包健華<div class='hide'>年級：3<br>人數：80<br>學分：4<br>地點：物理館107<br></div></div><div class='Class'>(4)深度學習整合大數據產業個案分析
+Case analysis of deep learning integration of big data industry<br>林國中<div class='hide'>年級：1<br>人數：65<br>學分：3<br>地點：工學院A館104<br></div></div><div class='Class'>(5)深度學習整合大數據產業個案分析
+Case analysis of deep learning integration of big data industry<br>林國中<div class='hide'>年級：1<br>人數：65<br>學分：3<br>地點：工學院A館104<br></div></div><div class='Class'>(6)深度學習整合大數據產業個案分析
+Case analysis of deep learning integration of big data industry<br>林國中<div class='hide'>年級：1<br>人數：65<br>學分：3<br>地點：工學院A館104<br></div></div><div class='Class'>(C)行動通訊網路
+Mobile Communication Networks<br>江為國<div class='hide'>年級：1<br>人數：65<br>學分：3<br>地點：工學院A館205<br></div></div><div class='Class'>(C)雲端學習科技
+Cloud E-Learning Technology
+(遠距教學/Distant learning)<br>游寶達<div class='hide'>年級：1<br>人數：120<br>學分：3<br>地點：工學院A館001<br></div></div><div class='Class'>(C)編譯器
+Compilers<br>林迺衛<div class='hide'>年級：1<br>人數：60<br>學分：3<br>地點：創新大樓339<br></div></div><div class='Class'>(4)微積分（一）
+Calculus (I)<br>張瑞恩<div class='hide'>年級：1<br>人數：60<br>學分：4<br>地點：數學館205<br></div></div><div class='Class'>(5)微積分（一）
+Calculus (I)<br>張瑞恩<div class='hide'>年級：1<br>人數：60<br>學分：4<br>地點：數學館205<br></div></div><div class='Class'>(6)微積分（一）
+Calculus (I)<br>江謝宏任<div class='hide'>年級：1<br>人數：60<br>學分：4<br>地點：共同教室大樓202<br></div></div><div class='Class'>(C)微積分（一）
+Calculus (I)<br>潘志祥<div class='hide'>年級：1<br>人數：90<br>學分：3<br>地點：共同教室大樓215<br></div></div><div class='Class'>(C)微積分（一）
+Calculus (I)<br>陳孟豁<div class='hide'>年級：1<br>人數：90<br>學分：3<br>地點：共同教室大樓422<br></div></div><div class='Class'>(C)微積分（一）
+Calculus (I)<br>張守德<div class='hide'>年級：1<br>人數：90<br>學分：3<br>地點：共同教室大樓212<br></div></div><div class='Class'>(C)微積分（一）
+Calculus (I)<br>張覺心<div class='hide'>年級：1<br>人數：70<br>學分：3<br>地點：共同教室大樓401<br></div></div><div class='Class'>(4)基礎生物數學
+Mathematics for Life Sciences<br>王琪仁<div class='hide'>年級：1<br>人數：32<br>學分：4<br>地點：數學館307B<br></div></div><div class='Class'>(5)基礎生物數學
+Mathematics for Life Sciences<br>王琪仁<div class='hide'>年級：1<br>人數：32<br>學分：4<br>地點：數學館307B<br></div></div><div class='Class'>(C)微積分（一）
+Calculus (I)<br>紀美秀<div class='hide'>年級：1<br>人數：90<br>學分：3<br>地點：數學館201<br></div></div><div class='Class'>(C)微積分（一）
+Calculus (I)<br>廖文欽<div class='hide'>年級：1<br>人數：90<br>學分：3<br>地點：共同教室大樓422<br></div></div><div class='Class'>(C)微積分（一）
+Calculus (I)<br>褚孫錦<div class='hide'>年級：1<br>人數：60<br>學分：3<br>地點：共同教室大樓201<br></div></div><div class='Class'>(C)微積分（一）
+Calculus (I)<br>徐淑裕<div class='hide'>年級：1<br>人數：60<br>學分：3<br>地點：共同教室大樓203<br></div></div><div class='Class'>(C)微積分（一）
+Calculus (I)<br>賴振耀<div class='hide'>年級：1<br>人數：120<br>學分：3<br>地點：共同教室大樓216<br></div></div><div class='Class'>(6)微積分（一）
+Calculus (I)<br>張守德<div class='hide'>年級：1<br>人數：62<br>學分：3<br>地點：共同教室大樓204<br></div></div><div class='Class'>(4)高等微積分（一）
+Advanced Calculus (I)<br>黃志強<div class='hide'>年級：2<br>人數：70<br>學分：4<br>地點：數學館203<br></div></div><div class='Class'>(5)高等微積分（一）
+Advanced Calculus (I)<br>黃志強<div class='hide'>年級：2<br>人數：70<br>學分：4<br>地點：數學館203<br></div></div><div class='Class'>(6)線性代數(二)
+Linear Algebra (II)<br>黃博峙<div class='hide'>年級：2<br>人數：60<br>學分：3<br>地點：數學館205<br></div></div></td>
+                                    <td><div class='Class'>(9)普通物理實驗（一）
+Experiments on General Physics (I)<br>謝立宜<div class='hide'>年級：1<br>人數：44<br>學分：1<br>地點：物理館101<br></div></div><div class='Class'>(8)普通物理（一）
+General Physics (I)<br>謝立宜<div class='hide'>年級：1<br>人數：70<br>學分：3<br>地點：物理館206<br></div></div><div class='Class'>(9)普通物理（一）
+General Physics (I)<br>謝立宜<div class='hide'>年級：1<br>人數：70<br>學分：3<br>地點：物理館206<br></div></div><div class='Class'>(8)普通物理（一）
+General Physics (I)<br>包健華<div class='hide'>年級：1<br>人數：117<br>學分：4<br>地點：物理館502TEAL教室<br></div></div><div class='Class'>(9)普通物理（一）
+General Physics (I)<br>包健華<div class='hide'>年級：1<br>人數：117<br>學分：4<br>地點：物理館502TEAL教室<br></div></div><div class='Class'>(9)普通物理(一)演習
+Recitation on General Physics (I)<br>包健華<div class='hide'>年級：1<br>人數：117<br>學分：1<br>地點：物理館502TEAL教室<br></div></div><div class='Class'>(8)基礎物理演習（三）
+Recitation on Fundamental of Physics (III)<br>蘇旺昌<div class='hide'>年級：2<br>人數：40<br>學分：1<br>地點：物理館212<br></div></div><div class='Class'>(8)理論力學
+Theoretical Mechanics<br>杜明憲<div class='hide'>年級：2<br>人數：50<br>學分：4<br>地點：物理館106<br></div></div><div class='Class'>(9)理論力學
+Theoretical Mechanics<br>杜明憲<div class='hide'>年級：2<br>人數：50<br>學分：4<br>地點：物理館106<br></div></div><div class='Class'>(F)光學
+Optics<br>魏台輝<div class='hide'>年級：3<br>人數：50<br>學分：3<br>地點：物理館307<br></div></div><div class='Class'>(E)電腦網路
+Computer Networks
+(遠距教學/Distant learning)<br>連紹宇<div class='hide'>年級：1<br>人數：75<br>學分：3<br>地點：創新大樓326<br></div></div><div class='Class'>(F)電腦網路
+Computer Networks
+(遠距教學/Distant learning)<br>連紹宇<div class='hide'>年級：1<br>人數：75<br>學分：3<br>地點：創新大樓326<br></div></div><div class='Class'>(E)生物資訊演算法
+Algorithms in Bioinformatics<br>黃耀廷<div class='hide'>年級：1<br>人數：65<br>學分：3<br>地點：工學院A館205<br></div></div><div class='Class'>(F)生物資訊演算法
+Algorithms in Bioinformatics<br>黃耀廷<div class='hide'>年級：1<br>人數：65<br>學分：3<br>地點：工學院A館205<br></div></div><div class='Class'>(E)Python與數學學習
+Python Programming in Mathematics
+(程式設計相關/Programming related)<br>褚孫錦<div class='hide'>年級：2<br>人數：40<br>學分：3<br>地點：電算中心216教室<br></div></div></td>
+                                    <td><div class='Class'>(11)論文研習與撰寫（一）
+Literatures study and thesis writing(I)<br>魏台輝 韓殿君<div class='hide'>年級：3<br>人數：30<br>學分：4<br>地點：物理館303<br></div></div><div class='Class'>(12)論文研習與撰寫（一）
+Literatures study and thesis writing(I)<br>魏台輝 韓殿君<div class='hide'>年級：3<br>人數：30<br>學分：4<br>地點：物理館303<br></div></div></td>
+                                    <td><div class='Class'>(I)普通物理（一）
+General Physics (I)
+(遠距教學/Distant learning)<br>謝立宜<div class='hide'>年級：1<br>人數：50<br>學分：3<br>地點：物理館106<br></div></div></td>
+                                    <td></td>
+                                    <td></td>
+
+    
+			</tr>
+			<!-------------------------------------------------------------------------------------------------------------------------------->
+			<tr valign="center">
+				<th class="REGION" style="height:auto;width:auto">
+					<div class="block1" id="b5">
+					<div class="block2">
+						<table>
+							<tr>
+								<td rowspan="3" class="TIME">V</td>
+								<td class="TIME">13</td>
+								<td class="TIME">19:10<br>20:00</td>
+							</tr>
+							<tr>
+								<td class="TIME">14</td>
+								<td class="TIME">20:10<br>21:00</td>
+							</tr>
+							<tr>
+								<td class="TIME">15</td>
+								<td class="TIME">21:10<br>22:00</td>
+							</tr>
+						</table>
+					</div>
+					<div class="block2">
+						<table width="55px">
+							<tr>
+								<td class="TIME">I</td>
+								<td class="TIME">19:15<br>20:30</td>
+							</tr>
+							<tr>
+								<td class="TIME">J</td>
+								<td class="TIME">20:45<br>22:00</td>
+							</tr>
+						</table>
+					</div>
+					</div>				
+				</th>
+
+                                    <td><div class='Class'>(1)普通物理實驗（一）
+Experiments on General Physics (I)<br>秦伊瑩<div class='hide'>年級：1<br>人數：55<br>學分：1<br>地點：物理館502TEAL教室<br></div></div><div class='Class'>(2)普通物理實驗（一）
+Experiments on General Physics (I)<br>秦伊瑩<div class='hide'>年級：1<br>人數：55<br>學分：1<br>地點：物理館502TEAL教室<br></div></div><div class='Class'>(3)普通物理實驗（一）
+Experiments on General Physics (I)<br>秦伊瑩<div class='hide'>年級：1<br>人數：55<br>學分：1<br>地點：物理館502TEAL教室<br></div></div><div class='Class'>(1)普通物理實驗（一）
+Experiments on General Physics (I)<br>謝立宜<div class='hide'>年級：1<br>人數：55<br>學分：1<br>地點：物理館101<br></div></div><div class='Class'>(2)普通物理實驗（一）
+Experiments on General Physics (I)<br>謝立宜<div class='hide'>年級：1<br>人數：55<br>學分：1<br>地點：物理館101<br></div></div><div class='Class'>(3)普通物理實驗（一）
+Experiments on General Physics (I)<br>謝立宜<div class='hide'>年級：1<br>人數：55<br>學分：1<br>地點：物理館101<br></div></div><div class='Class'>(3)普通物理實驗（一）
+Experiments on General Physics (I)<br>甘宏志<div class='hide'>年級：1<br>人數：30<br>學分：1<br>地點：物理館112<br></div></div><div class='Class'>(B)基本粒子物理導論
+Introduction to Elementary Particle Physics<br>蘇旺昌<div class='hide'>年級：4<br>人數：50<br>學分：3<br>地點：物理館106<br></div></div></td>
+                                    <td><div class='Class'>(4)普通物理實驗（一）
+Experiments on General Physics (I)<br>甘宏志<div class='hide'>年級：1<br>人數：30<br>學分：1<br>地點：物理館112<br></div></div><div class='Class'>(5)普通物理實驗（一）
+Experiments on General Physics (I)<br>甘宏志<div class='hide'>年級：1<br>人數：30<br>學分：1<br>地點：物理館112<br></div></div><div class='Class'>(6)基礎物理演習（一）
+Recitation on Fundamental of Physics (I)<br>梁贊全<div class='hide'>年級：1<br>人數：55<br>學分：1<br>地點：物理館211<br></div></div><div class='Class'>(4)觀念物理（一）
+Conceptual Physics (I)<br>李進榮<div class='hide'>年級：1<br>人數：80<br>學分：2<br>地點：物理館107<br></div></div><div class='Class'>(5)觀念物理（一）
+Conceptual Physics (I)<br>李進榮<div class='hide'>年級：1<br>人數：80<br>學分：2<br>地點：物理館107<br></div></div><div class='Class'>(4)熱統計物理學
+Thermal and Statistical Physics<br>蔡炎熾<div class='hide'>年級：3<br>人數：16<br>學分：4<br>地點：物理館304<br></div></div><div class='Class'>(5)熱統計物理學
+Thermal and Statistical Physics<br>蔡炎熾<div class='hide'>年級：3<br>人數：16<br>學分：4<br>地點：物理館304<br></div></div><div class='Class'>(C)計算方法
+Computer Algorithms
+(程式設計相關/Programming related)<br>黃耀廷<div class='hide'>年級：1<br>人數：90<br>學分：3<br>地點：工學院A館101<br></div></div><div class='Class'>(D)計算方法
+Computer Algorithms
+(程式設計相關/Programming related)<br>黃耀廷<div class='hide'>年級：1<br>人數：90<br>學分：3<br>地點：工學院A館101<br></div></div></td>
+                                    <td><div class='Class'>(9)普通物理實驗（一）
+Experiments on General Physics (I)<br>謝立宜<div class='hide'>年級：1<br>人數：44<br>學分：1<br>地點：物理館101<br></div></div></td>
+                                    <td><div class='Class'>(10)基礎物理（一）
+Fundamental of Physics (I)<br>梁贊全<div class='hide'>年級：1<br>人數：55<br>學分：4<br>地點：物理館211<br></div></div><div class='Class'>(11)基礎物理（一）
+Fundamental of Physics (I)<br>梁贊全<div class='hide'>年級：1<br>人數：55<br>學分：4<br>地點：物理館211<br></div></div><div class='Class'>(12)普通物理（一）A
+General Physics (I)A
+(遠距教學/Distant learning)<br>包健華<div class='hide'>年級：1<br>人數：50<br>學分：1<br>地點：物理館106<br></div></div></td>
+                                    <td><div class='Class'>(13)普通物理（一）B
+General Physics (I)B
+(遠距教學/Distant learning)<br>包健華<div class='hide'>年級：1<br>人數：50<br>學分：1<br>地點：物理館106<br></div></div><div class='Class'>(14)普通物理（一）C
+General Physics (I)C
+(遠距教學/Distant learning)<br>甘宏志<div class='hide'>年級：1<br>人數：50<br>學分：1<br>地點：物理館106<br></div></div></td>
+                                    <td></td>
+                                    <td></td>
+
+    
+			</tr>
+			<!-------------------------------------------------------------------------------------------------------------------------------->
+		</tbody>
+	</table>
+	<script>
+	var F1 = (function findH() {
+				var table = document.getElementsByClassName("REGION");
+				document.getElementById("b1").style.height= table[0].offsetHeight +"px";
+				document.getElementById("b2").style.height= table[1].offsetHeight +"px";
+				document.getElementById("b3").style.height= table[2].offsetHeight +"px";
+				document.getElementById("b4").style.height= table[3].offsetHeight +"px";
+				document.getElementById("b5").style.height= table[4].offsetHeight +"px";
+			}());
+	</script>
+	<script>
+	var off = 2;
+	function findH1() {
+		var table = document.getElementsByClassName("REGION");
+		document.getElementById("b1").style.height= "120px";
+		document.getElementById("b2").style.height= "120px";
+		document.getElementById("b3").style.height= "120px";	
+		document.getElementById("b4").style.height= "120px";
+		document.getElementById("b5").style.height= "120px";
+		document.getElementById("b1").style.height= table[0].offsetHeight -off +"px";
+		document.getElementById("b2").style.height= table[1].offsetHeight -off +"px";
+		document.getElementById("b3").style.height= table[2].offsetHeight -off +"px";		
+		document.getElementById("b4").style.height= table[3].offsetHeight -off +"px";
+		document.getElementById("b5").style.height= table[4].offsetHeight -off +"px";
+	}
+	setInterval(findH1,10);
+	</script>
+</body>
+</html>
